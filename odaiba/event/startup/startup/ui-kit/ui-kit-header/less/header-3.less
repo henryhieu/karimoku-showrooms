@@ -1,0 +1,176 @@
+/**
+ * Header 3 stylesheet  
+ * */
+ .header-3-startup-antiflicker {
+    border-bottom:1px @silver solid;
+}
+.header-3 {
+    padding-top:0;
+    padding-bottom:0;
+    margin-bottom:0;
+    margin-top:0;
+    z-index:100;
+    width:100%;
+    height:60px;
+	@media (max-width: @screen-xs-min) {
+    	height:40px;
+    padding-top:0;
+    padding-bottom:0;
+    margin-bottom:0;
+    margin-top:0;
+	}
+    .header-background {
+        background: #fff;
+    }
+    .navbar {
+        top: 0;
+        margin-top: 10px;
+        font-family: @font-family-demo;
+        &.navbar-fixed-top {
+            top: 0 !important;
+        }
+        .brand {
+            .font(25px, @midnight-blue);
+            font-weight: 800;
+            img:first-child {
+                float: left;
+                margin: -10px 15px 0 0;
+            }
+        }
+        .nav {
+            > li {
+                margin:8px 25px 0 0;
+                padding:7px 10px 9px 7px;
+                text-align: center;
+                text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+                -webkit-box-shadow: 1px 2px 2px #808080;
+                -moz-box-shadow: 1px 2px 2px #808080;
+                box-shadow: 1px 2px 2px #808080;
+//                border-radius:30px;
+                border: #eee solid 4px;
+                @media (min-width: @screen-sm-min) {
+                	.br {
+						display:none;
+					}
+				}
+                @media (max-width: @screen-xs-min) {
+                    margin:0;
+                    padding:5px 10px 6px 7px;
+                    text-align: center;
+                    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+//                    -webkit-box-shadow: 1px 2px 2px #808080;
+//                    -moz-box-shadow: 1px 2px 2px #808080;
+//                    box-shadow: 1px 2px 2px #808080;
+//                    border-radius:25px;
+                    border: #eee solid 3px;
+				}
+				.btn-primary {
+					margin-top:0;
+				}
+                &:first-child {
+                    margin-left: 0;
+                }
+                > a {
+                    padding: 0 10px 0 15px;
+                    .font(16px);
+                    font-weight: 800;
+                    letter-spacing: 2px;
+                    .a-color(@white, @white);
+                    .navi-text {
+						line-height: 1.2em;
+						float: left;
+						text-align: left;
+						padding-top:4px;
+					}
+					.icon-down-open {
+						float:left;
+						padding:0;
+						margin-right:5px;
+						@media (max-width: @screen-xs-min) {
+							font-size:13px;
+						}
+					}
+      				@media (max-width: @screen-xs-min) {
+						font-size: 10px;
+						padding:0;
+						letter-spacing:0;
+                    	padding: 0px 5px 0px 0;
+                    	.navi-text {
+							padding-top:0;
+						}
+					}
+                }
+                &.active > a {
+                    .a-color(@red, @link-hover-color);
+                }
+            }
+        }
+        .navbar-form {
+            padding: 23px 0 15px 50px;
+        }
+        .navbar-toggle {
+            background-image: url("@{startup-basePath}common-files/icons/menu-icon-dark@2x.png");
+            .background-size(17px 12px);
+        }
+    }
+}
+.header-3-sub {
+    position:relative;
+    background-color: #ffffff;
+    text-align:center;
+	margin-top:0;
+	padding-top:0;
+	img {
+		padding-left:10px;
+		padding-right:10px;
+	}
+	@media (max-width: @screen-xs-min) {
+		margin-top:0;
+		padding-top:0;
+	}
+    .row {
+		margin-top:0;
+		padding-top:0;
+		@media (max-width: @screen-xs-min) {
+			margin-top:0;
+			padding-top:0;
+		}
+	}
+    h2{
+		padding:15px 0;
+		@media (max-width: @screen-xs-min) {
+			font-size:  18px;
+		}
+	}
+    h3 {
+        font-weight: 800;
+        color: @red;
+        padding-top:15px;
+		font-size: @font-size-xlarge;
+        @media (max-width: @screen-xs-min) {
+			font-size:  @font-size-medium;
+		}
+		span{
+			font-size: @font-size-medium;
+			@media (max-width: @screen-xs-min) {
+			    font-size:  @font-size-small;
+			}
+		}
+    }
+    p {
+        font-size:@font-size-large;
+        font-family:@font-family-demo;
+        line-height: 1.9;
+       	@media (max-width: @screen-xs-min) {
+			font-size: 13px;
+		}
+    }
+    padding-top: 0px;
+    padding-bottom: 40px;
+    @media (max-width: 480px) {
+        padding-top: 0px;
+        background-attachment: scroll;
+        background-position: 50% 50% !important;
+        padding-bottom: 15px;
+    }
+}

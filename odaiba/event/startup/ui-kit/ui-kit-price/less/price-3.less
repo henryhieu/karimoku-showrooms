@@ -1,0 +1,81 @@
+/**
+ * Price 3 stylesheet  
+ * */
+ .price-3 {
+    padding-top: 50px;
+    padding-bottom: 60px;
+    .plans {
+        .clearfix();
+    }
+    
+    h5 {
+		margin-top:20px;
+		margin-bottom:20px;
+	}
+	.titlebox h4 {
+	}
+    .plan {
+        position: relative;
+        .box-sizing(border-box);
+        float: left;
+        width: 33.33%;
+        text-align: center;
+        font-size: @font-size-small;
+        > * {
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+        img {
+			margin-left:-20px;
+		}
+        b {
+            color: #7f8c8d;
+            font-weight: 500;
+        }
+        .title {
+            font-size: @font-size-medium;
+            font-weight: 500;
+            margin-bottom: 8px;
+            .img {
+                min-height: 134px;
+            }
+             h5 {
+				@media (max-width: @screen-xs-min) {
+					font-size:18px;
+					padding-top:5px;
+				}
+			}
+        }
+        .price {
+            font-weight: 400;
+        }
+        .description {
+            margin: 0px 0 10px;
+            line-height: 28px;
+            @media (max-width: @screen-xs-min) {
+					margin: 20px 0 15px;
+			}
+        }
+        .btn {
+            min-width: 170px;
+            font-weight: 800;
+        }
+        &.plan-2 {
+            border-left: 2px solid #e5e5e5;
+            border-right: 2px solid #e5e5e5;
+        }
+    }
+    @media (max-width: 767px) {
+        .plan {
+            float: none;
+            width: auto;
+            &.plan-2 {
+                border: 0;
+                border-top: 2px solid #ffffff;
+                border-bottom: 2px solid #ffffff;
+                padding: 20px 0;
+                margin: 20px 0;
+            }
+        }
+    }
+}
